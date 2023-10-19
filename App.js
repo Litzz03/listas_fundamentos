@@ -42,7 +42,6 @@ const styles = StyleSheet.create({
    justifyContent: 'center',
    marginTop: 15,
    alignItems: 'center',
-   textAlign: 'center'
   },
   textoPadrao:{
    fontSize: 25,
