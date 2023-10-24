@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { BoxComponente } from './components/Box';
 
 export default function App() {
   return (
@@ -7,12 +8,13 @@ export default function App() {
       <View style={styles.cabecario}>
         <Text style={styles.titulo}>LISTAS</Text>
       </View>
-      <View style={[styles.listaOrigem, {backgroundColor:"#FFA4A4"}]}><Text style={[styles.textoPadrao, {color:"#C62222"}]}>Animais</Text></View>
-      <View style={[styles.listaOrigem, {backgroundColor:"#EDA4FF"}]}><Text style={[styles.textoPadrao, {color:"#7422C6"}]}>Carros</Text></View>
-      <View style={[styles.listaOrigem, {backgroundColor:"#A4D4FF"}]}><Text style={[styles.textoPadrao, {color:"#2277C6"}]}>Peixes</Text></View>
-      <View style={[styles.listaOrigem, {backgroundColor:"#A4FFC3"}]}><Text style={[styles.textoPadrao, {color:"#22C646"}]}>Times</Text></View>
-      <View style={[styles.listaOrigem, {backgroundColor:"#D1D6D3"}]}><Text style={[styles.textoPadrao, {color:"#434A44"}]}>Filmes</Text></View>
-      <View style={[styles.listaOrigem, {backgroundColor:"#E8EFBD"}]}><Text style={[styles.textoPadrao, {color:"#747D10"}]}>Linguagens</Text></View>
+      
+      <BoxComponente corFundo={"#FFA4A4"} corTexto= {"#C62222"} texto={"Animais"}/>
+      <BoxComponente corFundo={"#EDA4FF"} corTexto= {"#7422C6"} texto={"Carros"}/>
+      <BoxComponente corFundo={"#A4D4FF"} corTexto= {"#2277C6"} texto={"Peixes"}/>
+      <BoxComponente corFundo={"#A4FFC3"} corTexto= {"#22C646"} texto={"Times"}/>
+      <BoxComponente corFundo={"#D1D6D3"} corTexto= {"#434A44"} texto={"Filmes"}/>
+      <BoxComponente corFundo={"#E8EFBD"} corTexto= {"#747D10"} texto={"Linguagens"}/>
     </View>
   )
 }
@@ -35,16 +37,5 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
     marginBottom: 10  
-  },
-  listaOrigem:{
-   height: 107,
-   width:408,
-   justifyContent: 'center',
-   marginTop: 15,
-   alignItems: 'center',
-  },
-  textoPadrao:{
-   fontSize: 25,
-   fontWeight: 'bold',
   }
 });
