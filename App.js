@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { BoxComponente } from './components/Box';
 
@@ -8,7 +7,7 @@ export default function App() {
       <View style={styles.cabecario}>
         <Text style={styles.titulo}>LISTAS</Text>
       </View>
-      
+
       <BoxComponente corFundo={"#FFA4A4"} corTexto= {"#C62222"} texto={"Animais"}/>
       <BoxComponente corFundo={"#EDA4FF"} corTexto= {"#7422C6"} texto={"Carros"}/>
       <BoxComponente corFundo={"#A4D4FF"} corTexto= {"#2277C6"} texto={"Peixes"}/>
